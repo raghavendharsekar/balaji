@@ -1,0 +1,6 @@
+- name: play2
+  hosts: webservers
+  tasks:
+    - name: command module - executing date command
+      command: date
+      register: output
